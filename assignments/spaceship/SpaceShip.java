@@ -26,3 +26,52 @@ public class SpaceShip {
     // Формат: "🚀 [нэр] | Түлш: X% | Зорчигч: Y | Нийт: Z км"
 
 }
+public class SpaceShip {
+
+    // private талбарууд
+    private String ner;
+    private int tulsh = 100;
+    private int zorchigch = 0;
+    private double km = 0;
+
+    // Constructor
+    public SpaceShip(String ner) {
+        this.ner = ner;
+    }
+
+    // Зорчигч авах
+    public String zorchigchAvah(int too) {
+        if (zorchigch + too > 10) {
+            return "Багтаамж хэтэрлээ!";
+        }
+
+        zorchigch += too;
+        return too + " зорчигч нэмэгдлээ";
+    }
+
+    // Нислэг хийх
+    public String nisleg(double zai) {
+        double heregteiTulsh = zai * 0.5;
+
+        if (tulsh < heregteiTulsh) {
+            return "Түлш дутуу!";
+        }
+
+        tulsh -= heregteiTulsh;
+        km += zai;
+
+        return "Нислэг амжилттай! " + zai + " км нисэв";
+    }
+
+    // Түлш цэнэглэх
+    public void tulshTsenegleh(int hemjee) {
+        tulsh = Math.min(100, tulsh + hemjee);
+    }
+
+    // toString
+    @Override
+    public String toString() {
+        return "🚀 " + ner + " | Түлш: " + tulsh + "% | Зорчигч: "
+                + zorchigch + " | Нийт: " + km + " км";
+    }
+}
