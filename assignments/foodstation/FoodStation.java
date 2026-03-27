@@ -89,4 +89,6 @@ import java.util.ArrayList;
                     + " хоол | Орлого: " + niitOrlogo + "₮";
         }
     }
+    // bagshaa ai iin argalj chaddgue uuchlaarai unher amjsangue visual der chaddgue tgd untellj der hiisen hbur
+    // tsagnda amjhgu bna oilgod uguuch bagshaa guujin
 

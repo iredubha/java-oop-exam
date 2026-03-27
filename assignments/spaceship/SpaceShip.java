@@ -75,3 +75,4 @@ public class SpaceShip {
                 + zorchigch + " | Нийт: " + km + " км";
     }
 }
+// bagshaa uuchlaarai

@@ -101,3 +101,5 @@ public class CommSystem {
                 + signalHvch + "% | Лог: " + log.size() + " мессеж";
     }
 }
+
+// bagshaa uuchlaarai
